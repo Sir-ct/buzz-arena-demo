@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css/article.css">
-    <link rel="stylesheet" href="/styles.css/newArticle.css">
-    <link rel="stylesheet" href="/styles.css/main.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/Hood-logo.png">
+    <link rel="stylesheet" href="./styles.css/article.css">
+    <link rel="stylesheet" href="./styles.css/newArticle.css">
+    <link rel="stylesheet" href="./styles.css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Hood-logo.png">
     <title>DA-HOOD</title>
 </head>
 <body>
   
     <header>
     <div class="header">
+      <div class="mobilenav" id="mobilenav">
+        -
+        -
+      </div>
         <div class="socialicons">
           <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
           <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
           <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
           <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
-          <a href="#"><ion-icon src="/images/Hood-svg.svg"></ion-icon></a>
+          <a href="#"><ion-icon src="./images/Hood-svg.svg"></ion-icon></a>
         </div>
         <div class="logodiv">
           _BUZZ-ARENA.
@@ -28,17 +32,27 @@
           <input type="text" placeholder="SEARCH">
           <ion-icon name="search-outline"></ion-icon>
         </div>
+        <div class="mobilesearch"></div>
       </div>
-      <nav>
+      <nav id="navbar">
         <ul>
-          <li><a href="/">Home</a> </li>
-          <li><a href="/categories">Categories</a></li>
-          <li><a href="/forum">Forum</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="./index.html">Home</a> </li>
+          <li>Categories
+            <ul class="cat-drop">
+              <a href="./categories.html"><li>Buzz</li></a>
+              <a href="./categories.html"><li>Sports</li></a>
+              <a href="./categories.html"><li>Tech</li></a>
+              <a href="./categories.html"><li>Fashion</li></a>
+            </ul>
+          </li>
+          <li><a href="./forum.html">Forum</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </nav>
       </header>
+
+
         <section id="write-article">
             <div class="article-body">
                 <div class="article-title">
@@ -49,6 +63,22 @@
                 </div>
                 <div class="article-content">
                     <textarea name="content" id="n-a-c" placeholder="Start writing..." ></textarea>
+                </div>
+                <div class="select-category">
+                  <h3>Select Category</h3>
+                  <input type="checkbox" name="category" id="fashion" value="fashion">
+                  <label for="fashion">Fashion</label>
+                  <input type="checkbox" name="category" id="tech" value="tech">
+                  <label for="tech">Tech</label>
+                  <input type="checkbox" name="category" id="buzz" value="buzz">
+                  <label for="buzz">Buzz</label>
+                  <input type="checkbox" name="category" id="sports" value="sports">
+                  <label for="sports">Sports</label>
+                </div>
+
+                <div class="author">
+                  <h3>Enter Author's Email</h3>
+                  <input type="email" name="authormail" >
                 </div>
             
                 <div class="post-btns">
